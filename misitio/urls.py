@@ -22,5 +22,8 @@ urlpatterns = [
     url(r'^$', views.index ,name='index'),
     url(r'^about/$', views.about ,name='about'),
     url(r'^contact/$', views.contact ,name='contact'),
-
+    url(r'^marcos/$', views.marcos ,name='marcos'),
+    url(r'^cajas/$', views.cajas ,name='cajas'),
+    url(r'^recuperacion/$', views.recuperacion ,name='recuperacion'),
+    url(r'^litografias/$', views.litografias ,name='litografias'),
 ]
