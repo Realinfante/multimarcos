@@ -20,10 +20,18 @@ def cajas(request):
     context={}
     return render(request,"cajas.html",context)    
 
-def recuperacion(request):
+def restauracion(request):
     context={}
     return render(request,"recuperacion.html",context)
 
 def litografias(request):
     context={}
     return render(request,"litografias.html",context)
+
+def galeria(request):
+    context={}
+    return render(request,"galeria.html",context)
+
+def opciones(request):
+    context={}
+    return render(request,"opciones.html",context)

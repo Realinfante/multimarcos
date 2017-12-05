@@ -3,7 +3,80 @@
 
 {%block content %}
 {%include 'snippets/botonfijo.html'%}
-      
+
+<header class="section background-primary text-center">
+  <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">Restauración de Fotografías</h1>
+</header>
+
+
+    
+<br><br>
+
+<section >
+
+   
+           <div class="line">
+            <div class="margin">
+               <div class="s-12 m-6 l-4 margin-bottom">
+                  <div class="box">
+                     <h2>Fotos antiguas</h2>
+                     <p>¡Recupere fotos de sus seres más queridos y reviva historias! mediante el servicio de restauraciones ofrecemos mejora de color y cambio de fondo para hacer un bonito retrato.</p>
+                  </div>
+               </div>
+               <div class="s-12 m-6 l-4 margin-bottom">
+                  <div class="box">
+                     <h2>Personalización</h2>
+                     <p>además se puedeRestauracion extraer solo a una persona de cualquier foto; trabajamos reproduciendo fotos que ya tenga o directamente con fotos digitales, puede también pedir quitar o unir personas de una o más fotos.</p>
+                  </div>
+               </div>
+               <div class="s-12 m-12 l-4 margin-bottom">
+                  <div class="box">
+                     <h2>Impresiones</h2>
+                     <p>Ofrecemos impresiones en todos los tamaños y te enviamos el archivo en formato digital en alta resolución para que puedas hacer más copias en el futuro del tamaño que desees.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+ 
+
+
+         <!-- CAROUSEL -->  
+         <div class="line ">
+            <div id="owl-demo" class="owl-carousel owl-theme  margin-bottom ">
+               <div class="item"><img src="{% static 'img/restauracion1.jpeg' %}" alt=""></div>
+               <div class="item"><img src="{% static 'img/restauracion2.jpeg' %}" alt=""></div>
+            </div>
+         </div>
+
+
+         <h2 class="text-s-size-40 text-size-50 text-line-height-1 margin-bottom-10 text-thin text-center"><span class="text-dark"></span> ¿Qué hacemos? <span class="text-dark"></span></h2> <br><br>
+              <p class="margin-bottom-50 text-center">
+              El servicio consiste en restaurar de manera digital la imagen deteriorada o dañada para imprimir una foto nueva. En ningún caso contemplamos arreglo físico de su foto original. Por ello podemos hacer restauraciones de fotografías antiguas a partir de la original sin dañarla o modificarla físicamente, ya que trabajamos en formato digital lo cual además nos permite ofrecerle impresiones nuevas en el tamaño o formato que desee, se pueden recuperar fotos con diversos daños tales como:
+              Rasgaduras, Cortes, Manchas de lápiz, Manchas de sol, Hongos, polvo y rasgaduras superficiales,entre otras.
+              </p>   
+        
+</section>
+
      
-      
+<script type="text/javascript" src="js/responsee.js"></script>               
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>  
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {	  
+           $("#owl-demo").owlCarousel({		
+           	navigation : true,
+           	slideSpeed : 300,
+           	paginationSpeed : 400,
+           	autoPlay : true,
+           	singleItem:true
+           });
+           $("#owl-demo2").owlCarousel({
+        		items : 4,
+           	lazyLoad : true,
+           	autoPlay : true,
+           	navigation : true,
+           	pagination : false
+           });
+         });	 
+      </script>
+
 {%endblock content %}

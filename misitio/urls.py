@@ -24,6 +24,8 @@ urlpatterns = [
     url(r'^contact/$', views.contact ,name='contact'),
     url(r'^marcos/$', views.marcos ,name='marcos'),
     url(r'^cajas/$', views.cajas ,name='cajas'),
-    url(r'^recuperacion/$', views.recuperacion ,name='recuperacion'),
+    url(r'^restauracion/$', views.restauracion ,name='restauracion'),
     url(r'^litografias/$', views.litografias ,name='litografias'),
+    url(r'^galeria/$', views.galeria ,name='galeria'),
+    url(r'^opciones/$', views.opciones ,name='opciones'),
 ]

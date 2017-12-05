@@ -3,7 +3,104 @@
 
 {%block content %}
 {%include 'snippets/botonfijo.html'%}
-      
+
+
+
+
+<header class="section background-primary text-center">
+  <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">Marcos</h1>
+</header>
+
+<section class="section-top-padding background-white"> 
+            <div class="line">
+              <div class="margin">
+                <div class="s-12 m-12 l-4 margin-m-bottom">
+                  <a class="image-hover-zoom margin-bottom" ><img src="{% static 'img/bastingles.jpeg' %}" alt=""></a>
+                  <h2>Bastidores Ingleses</h2>
+                  <p class="margin-bottom">¿Necesitas bastidores ingleses para tus lienzos?, tenemos bastidores en diferentes tamaños.</p>                
+                </div>
+                <div class="s-12 m-12 l-4 margin-m-bottom">
+                  <a class="image-hover-zoom margin-bottom" ><img src="{% static 'img/events.jpeg' %}" alt=""></a>
+                  <h2>Enmarcado de fotografías para todo tipo de eventos</h2>
+                  <p class="margin-bottom">Enmarcamos esos momentos únicos e inolvidables. Para esos momentos inolvidables y todo tipo de ocasión como: bodas, XV años, presentaciones, cumpleaños u otro evento importante.</p>                 
+                </div>
+                <div class="s-12 m-12 l-4 margin-m-bottom">
+                  <a class="image-hover-zoom margin-bottom" ><img src="{% static 'img/pinturas.jpeg' %}" alt=""></a>
+                  <h2>Enmarcado de pinturas</h2>
+                  <p class="margin-bottom">Una ventana a través de la cual vemos nuestras pinturas. Los marcos proveen solidez y protección a las obras de arte, captan la atención hacia lo que contienen, brindan una mejor opción de colocación de la obra.</p>                 
+                </div>
+
+              </div>
+            </div>
+</section>
+<section class="section-top-padding background-white"> 
+            <div class="line">
+              <div class="margin">
+                <div class="s-12 m-12 l-4 margin-m-bottom">
+                  <a class="image-hover-zoom margin-bottom" ><img src="{% static 'img/posters.jpeg' %}" alt=""></a>
+                  <h2>Enmarcado de posters</h2>
+                  <p class="margin-bottom">¿Necesita un poster? Ofrecemos posters enmarcados de acuerdo a las necesidades de su casa, oficina o negocio.</p>                
+                </div>
+                <div class="s-12 m-12 l-4 margin-m-bottom">
+                  <a class="image-hover-zoom margin-bottom" ><img src="{% static 'img/rompecabezas.jpeg' %}" alt=""></a>
+                  <h2>Enmarcado de rompecabezas</h2>
+                  <p class="margin-bottom">Enmarcamos rompecabezas. A veces, un rompecabezas completo es demasiado hermoso para desarmarlo y deshacer el trabajo duro que te costó armarlo.</p>                 
+                </div>
+                <div class="s-12 m-12 l-4 margin-m-bottom">
+                  <a class="image-hover-zoom margin-bottom" ><img src="{% static 'img/bastidores.jpeg' %}" alt=""></a>
+                  <h2>Bastidores para pinturas</h2>
+                  <p class="margin-bottom">Bastidores de madera con variedades de lienzos con imprimación para pintura al oleo, acrílico, acuarela, etc.</p>                 
+                </div>
+
+              </div>
+            </div>
+</section>
+
+
+    
+<br><br>
+
+<section >
+  <h2 class="text-s-size-40 text-size-50 text-line-height-1 margin-bottom-10 text-thin text-center"><span class="text-dark"></span> Algunos marcos hechos clientes  <span class="text-dark"></span></h2> <br><br>
+         <!-- CAROUSEL -->  
+         <div class="line ">
+            <div id="owl-demo" class="owl-carousel owl-theme  margin-bottom ">
+               <div class="item"><img src="{% static 'img/trabajosmarcos1.jpeg' %}" alt=""></div>
+               <div class="item"><img src="{% static 'img/trabajosmarcos2.jpeg' %}" alt=""></div>
+               <div class="item"><img src="{% static 'img/trabajosmarcos3.jpeg' %}" alt=""></div>
+               <div class="item"><img src="{% static 'img/trabajosmarcos4.jpeg' %}" alt=""></div>
+               <div class="item"><img src="{% static 'img/trabajosmarcos5.jpeg' %}" alt=""></div>
+               <div class="item"><img src="{% static 'img/trabajosmarcos6.jpeg' %}" alt=""></div>
+               <div class="item"><img src="{% static 'img/trabajosmarcos7.jpeg' %}" alt=""></div>
+               <div class="item"><img src="{% static 'img/trabajosmarcos8.jpeg' %}" alt=""></div>
+               <div class="item"><img src="{% static 'img/trabajosmarcos9.jpeg' %}" alt=""></div>
+            </div>
+         </div>
+         
+</section>
+
+
+
      
-      
+<script type="text/javascript" src="js/responsee.js"></script>               
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>  
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {	  
+           $("#owl-demo").owlCarousel({		
+           	navigation : true,
+           	slideSpeed : 300,
+           	paginationSpeed : 400,
+           	autoPlay : true,
+           	singleItem:true
+           });
+           $("#owl-demo2").owlCarousel({
+        		items : 4,
+           	lazyLoad : true,
+           	autoPlay : true,
+           	navigation : true,
+           	pagination : false
+           });
+         });	 
+      </script>
+
 {%endblock content %}
